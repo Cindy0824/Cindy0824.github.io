@@ -1,0 +1,131 @@
+.circle {
+    width: 65px;
+    height: 65px;
+    border-radius: 100px;
+    display: inline-block;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #808080;
+}
+
+.rounded-rectangle {
+    width: 65px;
+    height: 65px;
+    border-radius: 10px;
+    display: inline-block;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #808080;
+}
+
+.i-person {
+    background-image: url("icon-list.png");
+    background-size: 550px;
+    background-position-x: -46px;
+    background-position-y: -48px;
+}
+
+.i-phone {
+    background-image: url("icon-list.png");
+    background-size: 520px;
+    background-position-x: -165px;
+    background-position-y: -43px;
+}
+
+.i-message {
+    background-image: url("icon-list.png");
+    background-size: 570px;
+    background-position-x: -320px;
+    background-position-y: -49px;
+}
+
+.i-clock {
+    background-image: url("icon-list.png");
+    background-size: 590px;
+    background-position-x: -473px;
+    background-position-y: -53px;
+}
+
+.i-music {
+    background-image: url("icon-list.png");
+    background-size: 570px;
+    background-position-x: -50px;
+    background-position-y: -186px;
+}
+
+.i-photo {
+    background-image: url("icon-list.png");
+    background-size: 580px;
+    background-position-x: -187px;
+    background-position-y: -188px;
+}
+
+.i-photocamera {
+    background-image: url("icon-list.png");
+    background-size: 570px;
+    background-position-x: -320px;
+    background-position-y: -187px;
+}
+
+.i-videocamera {
+    background-image: url("icon-list.png");
+    background-size: 590px;
+    background-position-x: -473px;
+    background-position-y: -193px;
+}
+
+.i-webcam {
+    background-image: url("icon-list.png");
+    background-size: 590px;
+    background-position-x: -52px;
+    background-position-y: -335px;
+}
+
+.i-microphone {
+    background-image: url("icon-list.png");
+    background-size: 590px;
+    background-position-x: -193px;
+    background-position-y: -335px;
+}
+
+.i-trashcan {
+    background-image: url("icon-list.png");
+    background-size: 590px;
+    background-position-x: -333px;
+    background-position-y: -332px;
+}
+
+.i-find {
+    background-image: url("icon-list.png");
+    background-size: 590px;
+    background-position-x: -473px;
+    background-position-y: -335px;
+}
+
+.i-location {
+    background-image: url("icon-list.png");
+    background-size: 590px;
+    background-position-x: -50px;
+    background-position-y: -475px;
+}
+
+.i-setting {
+    background-image: url("icon-list.png");
+    background-size: 590px;
+    background-position-x: -191px;
+    background-position-y: -474px;
+}
+
+.i-speaker {
+    background-image: url("icon-list.png");
+    background-size: 590px;
+    background-position-x: -336px;
+    background-position-y: -475px;
+}
+
+.i-note {
+    background-image: url("icon-list.png");
+    background-size: 590px;
+    background-position-x: -475px;
+    background-position-y: -474px;
+}
