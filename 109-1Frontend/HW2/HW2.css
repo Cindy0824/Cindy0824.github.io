@@ -37,54 +37,126 @@
 .桌布 {
     background: url("桌布.jpg");
     background-position: center;
-    background-size: 300px;
+    background-size: 250px;
     width: 250px;
-    height: 340px;
+    height: 320px;
     position: absolute;
     left: 38px;
-    top: 150px;
+    top: 167px;
 }
+
+.bottom {}
 
 .LINE {
     background: url("LINE.png");
     background-position: center;
-    background-size: 40px;
-    width: 40px;
-    height: 40px;
+    background-size: 37px;
+    width: 37px;
+    height: 37px;
     position: absolute;
-    left: 45px;
-    top: 158px;
+    left: 60px;
+    top: 163px;
 }
 
 .IG {
     background: url("IG.png");
     background-position: center;
-    background-size: 40px;
-    width: 40px;
-    height: 40px;
+    background-size: 37px;
+    width: 37px;
+    height: 37px;
     position: absolute;
-    left: 90px;
-    top: 158px;
+    left: 116px;
+    top: 163px;
 }
 
 .FB {
     background: url("FB.png");
     background-position: center;
-    background-size: 40px;
-    width: 40px;
-    height: 40px;
+    background-size: 37px;
+    width: 37px;
+    height: 37px;
     position: absolute;
-    left: 150px;
-    top: 158px;
+    left: 172px;
+    top: 163px;
 }
 
 .火車 {
     background: url("火車.png");
     background-position: center;
-    background-size: 40px;
-    width: 40px;
-    height: 40px;
+    background-size: 37px;
+    width: 37px;
+    height: 37px;
     position: absolute;
-    left: 200px;
-    top: 158px;
+    left: 228px;
+    top: 163px;
+    border-radius: 7px;
+}
+
+.相機 {
+    background: url("相機.png");
+    background-position: center;
+    background-size: 37px;
+    width: 37px;
+    height: 37px;
+    position: absolute;
+    left: 60px;
+    top: 210px;
+}
+
+.電話 {
+    background: url("電話.png");
+    background-position: center;
+    background-size: 37px;
+    width: 37px;
+    height: 37px;
+    position: absolute;
+    left: 116px;
+    top: 210px;
+}
+
+.麥當勞 {
+    background: url("麥當勞.png");
+    background-position: center;
+    background-size: 35px;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 60px;
+    top: 495px;
+}
+
+.message {
+    background: url("message.jpg");
+    background-position: center;
+    background-size: 57px;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 116px;
+    top: 495px;
+    border-radius: 7px;
+}
+
+.map {
+    background: url("map.jpg");
+    background-position: center;
+    background-size: 35px;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 172px;
+    top: 495px;
+    border-radius: 7px;
+}
+
+.game {
+    background: url("game.png");
+    background-position: center;
+    background-size: 110px;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 230px;
+    top: 495px;
+    border-radius: 7px;
 }
