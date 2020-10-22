@@ -74,3 +74,14 @@ ul.icon li {
   position: absolute;
 
 }
+
+.word {
+  color: black;
+
+}
+
+.LINE {
+  position: absolute;
+  left: 60px;
+  top: 180px;
+}
