@@ -78,7 +78,7 @@ ul.icon li {
 .word {
   color: black;
   font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, "Microsoft JhengHei", sans-serif;
 }
 
 .LINE {
@@ -106,12 +106,14 @@ ul.icon li {
 }
 
 .相機 {
+  font-weight: bolder;
   position: absolute;
   left: 58px;
   top: 255px;
 }
 
 .電話 {
+  font-weight: bolder;
   position: absolute;
   left: 118px;
   top: 255px;
