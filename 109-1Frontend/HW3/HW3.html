@@ -1,762 +1,84 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="profile" href="https://gmpg.org/xfn/11">
-<title>前端程式設計：作業三</title>
-
-<meta name="description" content="Just another colorlib.com site" />
-<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-<link rel="canonical" href="https://colorlib.com/blaskan/" />
-<link rel="next" href="https://colorlib.com/blaskan/page/2/" />
-<meta property="og:locale" content="en_US" />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Blaskan Demo - Just another colorlib.com site" />
-<meta property="og:description" content="Just another colorlib.com site" />
-<meta property="og:url" content="https://colorlib.com/blaskan/" />
-<meta property="og:site_name" content="Blaskan Demo" />
-<meta name="twitter:card" content="summary" />
-<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://colorlib.com/blaskan/#website","url":"https://colorlib.com/blaskan/","name":"Blaskan Demo","description":"Just another colorlib.com site","potentialAction":[{"@type":"SearchAction","target":"https://colorlib.com/blaskan/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"CollectionPage","@id":"https://colorlib.com/blaskan/#webpage","url":"https://colorlib.com/blaskan/","name":"Blaskan Demo - Just another colorlib.com site","isPartOf":{"@id":"https://colorlib.com/blaskan/#website"},"description":"Just another colorlib.com site","inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://colorlib.com/blaskan/"]}]}]}</script>
-
-<link rel='dns-prefetch' href='//fonts.googleapis.com' />
-<link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title="Blaskan Demo &raquo; Feed" href="https://colorlib.com/blaskan/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Blaskan Demo &raquo; Comments Feed" href="https://colorlib.com/blaskan/comments/feed/" />
-<script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/colorlib.com\/blaskan\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5.1"}};
-			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
-		</script>
-<style type="text/css">
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 .07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-}
-</style>
-<link rel='stylesheet' id='wp-block-library-css' href='https://colorlib.com/blaskan/wp-includes/css/dist/block-library/style.min.css?ver=5.5.1' type='text/css' media='all' />
-<link rel='stylesheet' id='contact-form-7-css' href='https://colorlib.com/blaskan/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.2.2' type='text/css' media='all' />
-<style id="blaskan-fonts-css" media="all">/* latin */
-@font-face {
-  font-family: 'Droid Serif';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Droid Serif Regular'), local('DroidSerif-Regular'), url(/fonts.gstatic.com/s/droidserif/v13/tDbI2oqRg1oM3QBjjcaDkOr9rAU.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin */
-@font-face {
-  font-family: 'Droid Serif';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Droid Serif Bold'), local('DroidSerif-Bold'), url(/fonts.gstatic.com/s/droidserif/v13/tDbV2oqRg1oM3QBjjcaDkOJGiRD7OwE.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Pacifico';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(/fonts.gstatic.com/s/pacifico/v17/FwZY7-Qmy14u9lezJ-6K6MmTpA.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Pacifico';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(/fonts.gstatic.com/s/pacifico/v17/FwZY7-Qmy14u9lezJ-6D6MmTpA.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Pacifico';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(/fonts.gstatic.com/s/pacifico/v17/FwZY7-Qmy14u9lezJ-6I6MmTpA.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Pacifico';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(/fonts.gstatic.com/s/pacifico/v17/FwZY7-Qmy14u9lezJ-6J6MmTpA.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Pacifico';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(/fonts.gstatic.com/s/pacifico/v17/FwZY7-Qmy14u9lezJ-6H6Mk.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(/fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmhduz8A.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(/fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwkxduz8A.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek-ext */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(/fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmxduz8A.woff2) format('woff2');
-  unicode-range: U+1F00-1FFF;
-}
-/* greek */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(/fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlBduz8A.woff2) format('woff2');
-  unicode-range: U+0370-03FF;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(/fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmBduz8A.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(/fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmRduz8A.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(/fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdu.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(/fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNa7lqDY.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(/fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qPK7lqDY.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek-ext */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(/fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNK7lqDY.woff2) format('woff2');
-  unicode-range: U+1F00-1FFF;
-}
-/* greek */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(/fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qO67lqDY.woff2) format('woff2');
-  unicode-range: U+0370-03FF;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(/fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qN67lqDY.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(/fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNq7lqDY.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(/fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(/fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmhduz8A.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(/fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwkxduz8A.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek-ext */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(/fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmxduz8A.woff2) format('woff2');
-  unicode-range: U+1F00-1FFF;
-}
-/* greek */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(/fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlBduz8A.woff2) format('woff2');
-  unicode-range: U+0370-03FF;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(/fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmBduz8A.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(/fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmRduz8A.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(/fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdu.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(/fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmhduz8A.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(/fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwkxduz8A.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek-ext */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(/fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmxduz8A.woff2) format('woff2');
-  unicode-range: U+1F00-1FFF;
-}
-/* greek */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(/fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlBduz8A.woff2) format('woff2');
-  unicode-range: U+0370-03FF;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(/fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmBduz8A.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(/fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmRduz8A.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(/fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 900;
-  src: local('Source Sans Pro Black'), local('SourceSansPro-Black'), url(/fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwmhduz8A.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 900;
-  src: local('Source Sans Pro Black'), local('SourceSansPro-Black'), url(/fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwkxduz8A.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek-ext */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 900;
-  src: local('Source Sans Pro Black'), local('SourceSansPro-Black'), url(/fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwmxduz8A.woff2) format('woff2');
-  unicode-range: U+1F00-1FFF;
-}
-/* greek */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 900;
-  src: local('Source Sans Pro Black'), local('SourceSansPro-Black'), url(/fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwlBduz8A.woff2) format('woff2');
-  unicode-range: U+0370-03FF;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 900;
-  src: local('Source Sans Pro Black'), local('SourceSansPro-Black'), url(/fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwmBduz8A.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 900;
-  src: local('Source Sans Pro Black'), local('SourceSansPro-Black'), url(/fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwmRduz8A.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 900;
-  src: local('Source Sans Pro Black'), local('SourceSansPro-Black'), url(/fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwlxdu.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Work Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: url(/fonts.gstatic.com/s/worksans/v8/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K0nXBiAJpp_c.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Work Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: url(/fonts.gstatic.com/s/worksans/v8/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K0nXBiEJpp_c.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Work Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: url(/fonts.gstatic.com/s/worksans/v8/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K0nXBi8Jpg.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-</style>
-<link rel='stylesheet' id='bootstrap-css' href='https://colorlib.com/blaskan/wp-content/themes/blaskan/assets/css/bootstrap.min.css?ver=5.5.1' type='text/css' media='all' />
-<link rel='stylesheet' id='fontawesome-css' href='https://colorlib.com/blaskan/wp-content/themes/blaskan/assets/css/font-awesome.min.css?ver=5.5.1' type='text/css' media='all' />
-<link rel='stylesheet' id='blaskan-style-css' href='https://colorlib.com/blaskan/wp-content/themes/blaskan/style.css?ver=5.5.1' type='text/css' media='all' />
-<script type='text/javascript' src='https://colorlib.com/blaskan/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp' id='jquery-core-js'></script>
-<link rel="https://api.w.org/" href="https://colorlib.com/blaskan/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://colorlib.com/blaskan/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://colorlib.com/blaskan/wp-includes/wlwmanifest.xml" />
-<meta name="generator" content="WordPress 5.5.1" />
-
-<style id="custom-logo-css" type="text/css">
-			.site-title, .site-description {
-				position: absolute;
-				clip: rect(1px, 1px, 1px, 1px);
-			}
-		</style>
-<link rel="preload" href="/blaskan/wp-includes/js/wp-emoji-release.min.js?ver=5.5.1" as="script"><link rel="preload" href="/blaskan/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp" as="script"><link rel="preload" href="/blaskan/wp-includes/css/dist/block-library/style.min.css?ver=5.5.1" as="style"><link rel="preload" href="/blaskan/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.2.2" as="style"><link rel="preload" href="/blaskan/wp-content/themes/blaskan/assets/css/bootstrap.min.css?ver=5.5.1" as="style"><link rel="preload" href="/blaskan/wp-content/themes/blaskan/assets/css/font-awesome.min.css?ver=5.5.1" as="style"><link rel="preload" href="/blaskan/wp-content/themes/blaskan/style.css?ver=5.5.1" as="style"></head>
-<body class="home blog wp-custom-logo group-blog hfeed mansonry-posts">
-<div id="page" class="site">
-<header id="masthead" class="site-header" role="banner">
-<div class="site-branding ">
-<div class="top-header container">
-<div class="blaskan-social-menu pull-right">
-<div class="menu-social-menu-container"><ul id="social-menu" class="menu"><li id="menu-item-33" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33"><a href="https://www.facebook.com/colorlib"><span>Facebook</span></a></li>
-<li id="menu-item-32" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32"><a href="https://twitter.com/colorlib"><span>Twitter</span></a></li>
-<li id="menu-item-34" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34"><a href="https://plus.google.com/+Colorlib"><span>GooglePlus</span></a></li>
-</ul></div> </div>
-<div class="search-header-form-container pull-right">
-<div id="search-header-form" class="search ">
-<form role="search" method="get" class="search-form" action="https://colorlib.com/blaskan/">
-<input id="search" type="search" name="s" placeholder="">
-<label for="search"><i class="fa fa-search" aria-hidden="true"></i></label>
-</form>
-</div>
-</div>
-<div class="clearfix"></div>
-</div>
-<div class="container">
-<a href="https://colorlib.com/blaskan/" class="custom-logo-link" rel="home" aria-current="page"><img width="177" height="55" src="https://colorlib.com/blaskan/wp-content/uploads/sites/16/2017/05/blaskan-logo.png" class="custom-logo" alt="Blaskan Demo" /></a>
-</div>
-</div>
-<nav id="site-navigation" class="main-navigation container" role="navigation">
-<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
-<div class="blaskan-main-menu">
-<ul id="primary-menu" class="menu"><li id="menu-item-41" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-41"><a href="https://colorlib.com/blaskan/" aria-current="page">What’s New</a></li>
-<li id="menu-item-42" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-42"><a href="https://colorlib.com/blaskan/category/lifestyle/">Lifestyle</a></li>
-<li id="menu-item-43" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-43"><a href="https://colorlib.com/blaskan/category/travel/">Travel</a></li>
-<li id="menu-item-45" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-45"><a href="#">Level 1</a>
-<ul class="sub-menu">
-<li id="menu-item-46" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-46"><a href="#">Level 2</a>
-<ul class="sub-menu">
-<li id="menu-item-49" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49"><a href="#">Level 3</a></li>
-<li id="menu-item-51" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-51"><a href="#">Level 3a</a></li>
-<li id="menu-item-50" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50"><a href="#">Level 3b</a></li>
-</ul>
-</li>
-<li id="menu-item-47" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47"><a href="#">Level 2a</a></li>
-<li id="menu-item-48" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48"><a href="#">Level 2b</a></li>
-</ul>
-</li>
-</ul> </div>
-</nav>
-
-<div class="custom-header" style="background-image:url(https://colorlib.com/blaskan/wp-content/themes/blaskan/assets/images/custom-header.jpg);height:460px"></div>
-</header>
-<div id="content" class="site-content container">
-<div id="primary" class="content-area row">
-<main id="main" class="site-main col-md-8 col-sm-12" role="main">
-<div id="posts-container" class="row">
-<article id="post-23" class="big-post col-md-12 post-23 post type-post status-publish format-standard has-post-thumbnail hentry category-adventures category-citybreakes category-landscapes category-lifestyle category-travel tag-decor tag-design tag-dive tag-furniture tag-health tag-learn tag-lifestyle tag-materials tag-natural tag-run tag-supplies">
-<header class="entry-header">
-<div class="entry-meta">
-<span class="byline">by <span class="author vcard"><a class="url fn n" href="https://colorlib.com/blaskan/author/demoblaskan/">Jane Smith</a></span></span><span class="posted-on"><span class="posted-on-delimeter"> - </span><a href="https://colorlib.com/blaskan/2017/04/20/explore-new-places-every-single-day/" rel="bookmark"><time class="entry-date published" datetime="2017-04-20T08:47:44+00:00">April 20, 2017</time><time class="updated" datetime="2017-05-08T11:29:39+00:00">May 8, 2017</time></a></span> </div>
-<h2 class="entry-title"><a href="https://colorlib.com/blaskan/2017/04/20/explore-new-places-every-single-day/" rel="bookmark">Explore new places every single day</a></h2>
-<div class="entry-thumbnail"><a href="https://colorlib.com/blaskan/2017/04/20/explore-new-places-every-single-day/" rel="bookmark"><img width="1140" height="570" src="https://colorlib.com/blaskan/wp-content/uploads/sites/16/2017/04/01_Article1-1140x570.jpg" class="attachment-big-blog-post size-big-blog-post wp-post-image" alt="" loading="lazy" /></a></div>
-</header>
-<div class="entry-content">
-<p>Integer at pharetra metus, non porttitor lorem. Pellentesque consectetur lacus at erat maximus fringilla. Mauris suscipit commodo lacus id rutrum. Suspendisse potenti. Vestibulum cursus lobortis suscipit. Pellentesque vel eleifend urna. Praesent id pellentesque metus. Aenean accumsan ipsum ac consectetur convallis. Sed efficitur blandit turpis ut rhoncus. Integer vehicula risus eget purus porttitor gravida. Ut dapibus aliquet quam, non tempus elit varius non. Aliquam rutrum molestie ipsum eu feugiat.</p>
-<p>In hac habitasse platea dictumst. Nullam vulputate fringilla nisl, non finibus lorem vulputate non. Donec non finibus ex. Curabitur quis elit sit amet nunc finibus volutpat vitae vitae enim. Vestibulum eget eros nec eros maximus cursus. Vestibulum et felis hendrerit, pellentesque mi quis, semper neque. Aliquam et elit metus.</p>
-<p>Nullam scelerisque ipsum vitae turpis luctus placerat. Ut eu odio urna. Sed blandit arcu vitae arcu finibus euismod sed vitae nisi. Nunc rutrum arcu justo, et condimentum felis efficitur ac. Praesent id erat ac felis dignissim commodo. Proin vehicula libero eu suscipit sodales. Vestibulum imperdiet nibh ut ligula semper posuere. Duis felis mauris, luctus eget dui eget, suscipit tempus magna. Duis quis purus sit amet diam condimentum iaculis. Proin varius sapien non erat elementum tincidunt. Phasellus aliquam sodales tellus, sit amet aliquet nisi elementum non. Nam in vulputate sem, in facilisis erat. Fusce auctor risus vel euismod rhoncus.</p>
-</div>
-</article>
-<article id="post-20" class="col-md-6 col-sm-12 post-20 post type-post status-publish format-standard has-post-thumbnail hentry category-adventures category-citybreakes category-landscapes category-lifestyle category-travel tag-decor tag-design tag-dive tag-furniture tag-health tag-learn tag-lifestyle tag-materials tag-natural tag-run tag-supplies">
-<header class="entry-header">
-<div class="entry-thumbnail"><a href="https://colorlib.com/blaskan/2017/04/20/travel-where-you-want/" rel="bookmark"><img width="350" height="250" src="https://colorlib.com/blaskan/wp-content/uploads/sites/16/2017/04/01_Article2-350x250.jpg" class="attachment-small-blog-post-landscape size-small-blog-post-landscape wp-post-image" alt="" loading="lazy" /></a></div>
-<div class="entry-meta">
-<span class="byline">by <span class="author vcard"><a class="url fn n" href="https://colorlib.com/blaskan/author/demoblaskan/">Jane Smith</a></span></span><span class="posted-on"><span class="posted-on-delimeter"> - </span><a href="https://colorlib.com/blaskan/2017/04/20/travel-where-you-want/" rel="bookmark"><time class="entry-date published" datetime="2017-04-20T08:45:40+00:00">April 20, 2017</time><time class="updated" datetime="2017-05-08T11:29:41+00:00">May 8, 2017</time></a></span> </div>
-<h2 class="entry-title"><a href="https://colorlib.com/blaskan/2017/04/20/travel-where-you-want/" rel="bookmark">Travel where you want.</a></h2>
-</header>
-<div class="entry-content">
-<p>Integer in ante eu mauris interdum vehicula id vitae lacus. Nunc tempus quis metus ac cursus. Duis at erat sit amet ipsum malesuada semper. Aliquam at enim nec odio lobortis egestas. Pellentesque scelerisque erat et magna pellentesque elementum ut eu tortor. Curabitur nisi tellus, egestas non semper ac, cursus non nunc. Donec eget nibh a lacus tincidunt pretium ac at purus. Cras risus orci, elementum eu elementum quis, consectetur id odio. Nullam elementum, arcu at ornare sagittis, augue lorem lacinia dui, convallis lacinia turpis mi hendrerit elit. Mauris molestie massa arcu, sit amet faucibus mi venenatis non.</p>
-<p>Integer at pharetra metus, non porttitor lorem. Pellentesque consectetur lacus at erat maximus fringilla. Mauris suscipit commodo lacus id rutrum. Suspendisse potenti. Vestibulum cursus lobortis suscipit. Pellentesque vel eleifend urna. Praesent id pellentesque metus. Aenean accumsan ipsum ac consectetur convallis. Sed efficitur blandit turpis ut rhoncus. Integer vehicula risus eget purus porttitor gravida. Ut dapibus aliquet quam, non tempus elit varius non. Aliquam rutrum molestie ipsum eu feugiat.</p>
-<p>In hac habitasse platea dictumst. Nullam vulputate fringilla nisl, non finibus lorem vulputate non. Donec non finibus ex. Curabitur quis elit sit amet nunc finibus volutpat vitae vitae enim. Vestibulum eget eros nec eros maximus cursus. Vestibulum et felis hendrerit, pellentesque mi quis, semper neque. Aliquam et elit metus.</p>
-</div>
-</article>
-<article id="post-17" class="col-md-6 col-sm-12 post-17 post type-post status-publish format-standard has-post-thumbnail hentry category-adventures category-citybreakes category-landscapes category-lifestyle category-travel tag-decor tag-design tag-dive tag-furniture tag-health tag-learn tag-lifestyle tag-materials tag-natural tag-run tag-supplies">
-<header class="entry-header">
-<div class="entry-thumbnail"><a href="https://colorlib.com/blaskan/2017/04/20/explore-the-world/" rel="bookmark"><img width="350" height="250" src="https://colorlib.com/blaskan/wp-content/uploads/sites/16/2017/04/01_Article3-350x250.jpg" class="attachment-small-blog-post-landscape size-small-blog-post-landscape wp-post-image" alt="" loading="lazy" /></a></div>
-<div class="entry-meta">
-<span class="byline">by <span class="author vcard"><a class="url fn n" href="https://colorlib.com/blaskan/author/demoblaskan/">Jane Smith</a></span></span><span class="posted-on"><span class="posted-on-delimeter"> - </span><a href="https://colorlib.com/blaskan/2017/04/20/explore-the-world/" rel="bookmark"><time class="entry-date published" datetime="2017-04-20T08:22:10+00:00">April 20, 2017</time><time class="updated" datetime="2017-05-08T11:29:43+00:00">May 8, 2017</time></a></span> </div>
-<h2 class="entry-title"><a href="https://colorlib.com/blaskan/2017/04/20/explore-the-world/" rel="bookmark">Explore the world</a></h2>
-</header>
-<div class="entry-content">
-<p>Nullam scelerisque ipsum vitae turpis luctus placerat. Ut eu odio urna. Sed blandit arcu vitae arcu finibus euismod sed vitae nisi. Nunc rutrum arcu justo, et condimentum felis efficitur ac. Praesent id erat ac felis dignissim commodo. Proin vehicula libero eu suscipit sodales. Vestibulum imperdiet nibh ut ligula semper posuere. Duis felis mauris, luctus eget dui eget, suscipit tempus magna. Duis quis purus sit amet diam condimentum iaculis. Proin varius sapien non erat elementum tincidunt. Phasellus aliquam sodales tellus, sit amet aliquet nisi elementum non. Nam in vulputate sem, in facilisis erat. Fusce auctor risus vel euismod rhoncus.</p>
-<p>Nam dolor lorem, commodo id volutpat sit amet, dignissim porta nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam pellentesque nisi eget urna lobortis, pharetra tempor eros viverra. Maecenas aliquam molestie magna ut maximus. Nam efficitur placerat blandit. Morbi libero arcu, sollicitudin ac interdum sed, congue vel elit. Praesent lectus ex, fringilla eu massa et, varius tincidunt nunc. Morbi egestas at enim eget vestibulum. Integer finibus enim non urna feugiat pellentesque. Etiam cursus vel neque id porttitor. Maecenas lectus massa, placerat nec elementum eu, ornare in tortor. Phasellus sit amet est elementum, condimentum lectus auctor, pellentesque ipsum.</p>
-</div>
-</article>
-<article id="post-14" class="col-md-6 col-sm-12 post-14 post type-post status-publish format-standard has-post-thumbnail hentry category-books category-cinema category-lifestyle tag-decor tag-design tag-dive tag-furniture tag-health tag-learn tag-lifestyle tag-materials tag-natural tag-run tag-supplies">
-<header class="entry-header">
-<div class="entry-thumbnail"><a href="https://colorlib.com/blaskan/2017/04/20/go-to-the-movies/" rel="bookmark"><img width="350" height="390" src="https://colorlib.com/blaskan/wp-content/uploads/sites/16/2017/04/01_Article4-350x390.jpg" class="attachment-small-blog-post-portrait size-small-blog-post-portrait wp-post-image" alt="" loading="lazy" /></a></div>
-<div class="entry-meta">
-<span class="byline">by <span class="author vcard"><a class="url fn n" href="https://colorlib.com/blaskan/author/demoblaskan/">Jane Smith</a></span></span><span class="posted-on"><span class="posted-on-delimeter"> - </span><a href="https://colorlib.com/blaskan/2017/04/20/go-to-the-movies/" rel="bookmark"><time class="entry-date published" datetime="2017-04-20T08:17:25+00:00">April 20, 2017</time><time class="updated" datetime="2017-05-08T11:29:45+00:00">May 8, 2017</time></a></span> </div>
-<h2 class="entry-title"><a href="https://colorlib.com/blaskan/2017/04/20/go-to-the-movies/" rel="bookmark">Go to the movies</a></h2>
-</header>
-<div class="entry-content">
-<p>Integer in ante eu mauris interdum vehicula id vitae lacus. Nunc tempus quis metus ac cursus. Duis at erat sit amet ipsum malesuada semper. Aliquam at enim nec odio lobortis egestas. Pellentesque scelerisque erat et magna pellentesque elementum ut eu tortor. Curabitur nisi tellus, egestas non semper ac, cursus non nunc. Donec eget nibh a lacus tincidunt pretium ac at purus. Cras risus orci, elementum eu elementum quis, consectetur id odio. Nullam elementum, arcu at ornare sagittis, augue lorem lacinia dui, convallis lacinia turpis mi hendrerit elit. Mauris molestie massa arcu, sit amet faucibus mi venenatis non.</p>
-<p>Integer at pharetra metus, non porttitor lorem. Pellentesque consectetur lacus at erat maximus fringilla. Mauris suscipit commodo lacus id rutrum. Suspendisse potenti. Vestibulum cursus lobortis suscipit. Pellentesque vel eleifend urna. Praesent id pellentesque metus. Aenean accumsan ipsum ac consectetur convallis. Sed efficitur blandit turpis ut rhoncus. Integer vehicula risus eget purus porttitor gravida. Ut dapibus aliquet quam, non tempus elit varius non. Aliquam rutrum molestie ipsum eu feugiat.</p>
-<p>In hac habitasse platea dictumst. Nullam vulputate fringilla nisl, non finibus lorem vulputate non. Donec non finibus ex. Curabitur quis elit sit amet nunc finibus volutpat vitae vitae enim. Vestibulum eget eros nec eros maximus cursus. Vestibulum et felis hendrerit, pellentesque mi quis, semper neque. Aliquam et elit metus.</p>
-</div>
-</article>
-<article id="post-11" class="col-md-6 col-sm-12 post-11 post type-post status-publish format-standard has-post-thumbnail hentry category-lifestyle tag-decor tag-design tag-dive tag-furniture tag-health tag-learn tag-lifestyle tag-materials tag-natural tag-run tag-supplies">
-<header class="entry-header">
-<div class="entry-thumbnail"><a href="https://colorlib.com/blaskan/2017/04/20/learn-always-new-things/" rel="bookmark"><img width="350" height="250" src="https://colorlib.com/blaskan/wp-content/uploads/sites/16/2017/04/01_Article5-350x250.jpg" class="attachment-small-blog-post-landscape size-small-blog-post-landscape wp-post-image" alt="" loading="lazy" /></a></div>
-<div class="entry-meta">
-<span class="byline">by <span class="author vcard"><a class="url fn n" href="https://colorlib.com/blaskan/author/demoblaskan/">Jane Smith</a></span></span><span class="posted-on"><span class="posted-on-delimeter"> - </span><a href="https://colorlib.com/blaskan/2017/04/20/learn-always-new-things/" rel="bookmark"><time class="entry-date published" datetime="2017-04-20T08:12:40+00:00">April 20, 2017</time><time class="updated" datetime="2017-05-08T11:29:47+00:00">May 8, 2017</time></a></span> </div>
-<h2 class="entry-title"><a href="https://colorlib.com/blaskan/2017/04/20/learn-always-new-things/" rel="bookmark">Learn always new things</a></h2>
-</header>
-<div class="entry-content">
-<p>Nam pretium accumsan cursus. Phasellus et urna pretium purus volutpat vestibulum sed ut metus. Proin augue ex, fermentum at sem vel, laoreet dignissim erat. Maecenas interdum neque nec accumsan eleifend. Fusce ultrices malesuada orci, ac tempor magna fringilla vitae. Cras sodales, leo at aliquam mattis, ex velit blandit purus, tincidunt posuere sem tellus vel mi. Etiam fringilla varius velit id pulvinar. Duis iaculis nec sapien fermentum mollis. Suspendisse potenti.</p>
-<p>Sed lorem augue, semper nec massa ac, egestas tincidunt libero. Cras luctus fermentum porta. Aenean eu porta magna, porttitor varius velit. Vestibulum magna erat, gravida at aliquet non, ultricies at mauris. Ut non mauris blandit, faucibus nisl id, lacinia nunc. Fusce eu ipsum dapibus, pretium sem et, rhoncus nunc. Sed turpis neque, malesuada quis euismod vitae, efficitur nec orci.</p>
-<p>Integer ac metus malesuada, fringilla tortor in, vulputate lectus. Maecenas lobortis aliquet erat. Sed ante sapien, fermentum quis ornare a, lacinia sit amet enim. Vestibulum tempor enim et pharetra dapibus. Fusce egestas sapien nec dolor lobortis semper. Nullam purus nisl, ornare eu rhoncus quis, auctor in mi. Sed vel eros ut lorem condimentum rutrum ac non mauris. Maecenas ultrices, sapien nec tempor tempor, tellus tortor dictum diam, nec scelerisque risus augue dapibus diam. Nunc mattis turpis eget nulla eleifend vulputate. Proin eget tempor felis. Curabitur viverra, nulla ac suscipit porta, nulla diam hendrerit magna, sed varius dolor lacus nec augue. Vivamus facilisis quis massa non sagittis.</p>
-</div>
-</article>
-<article id="post-8" class="col-md-6 col-sm-12 post-8 post type-post status-publish format-standard has-post-thumbnail hentry category-adventures category-citybreakes category-travel tag-decor tag-design tag-dive tag-furniture tag-health tag-learn tag-lifestyle tag-materials tag-natural tag-run tag-supplies">
-<header class="entry-header">
-<div class="entry-thumbnail"><a href="https://colorlib.com/blaskan/2017/04/20/travel-much-can/" rel="bookmark"><img width="350" height="230" src="https://colorlib.com/blaskan/wp-content/uploads/sites/16/2017/04/01_Article6-350x230.jpg" class="attachment-small-blog-post-landscape size-small-blog-post-landscape wp-post-image" alt="" loading="lazy" srcset="https://colorlib.com/blaskan/wp-content/uploads/sites/16/2017/04/01_Article6.jpg 350w, https://colorlib.com/blaskan/wp-content/uploads/sites/16/2017/04/01_Article6-300x197.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></a></div>
-<div class="entry-meta">
-<span class="byline">by <span class="author vcard"><a class="url fn n" href="https://colorlib.com/blaskan/author/demoblaskan/">Jane Smith</a></span></span><span class="posted-on"><span class="posted-on-delimeter"> - </span><a href="https://colorlib.com/blaskan/2017/04/20/travel-much-can/" rel="bookmark"><time class="entry-date published" datetime="2017-04-20T08:09:57+00:00">April 20, 2017</time><time class="updated" datetime="2017-05-08T11:29:49+00:00">May 8, 2017</time></a></span> </div>
-<h2 class="entry-title"><a href="https://colorlib.com/blaskan/2017/04/20/travel-much-can/" rel="bookmark">Travel as much as you can</a></h2>
-</header>
-<div class="entry-content">
-<p>Sed lorem augue, semper nec massa ac, egestas tincidunt libero. Cras luctus fermentum porta. Aenean eu porta magna, porttitor varius velit. Vestibulum magna erat, gravida at aliquet non, ultricies at mauris. Ut non mauris blandit, faucibus nisl id, lacinia nunc. Fusce eu ipsum dapibus, pretium sem et, rhoncus nunc. Sed turpis neque, malesuada quis euismod vitae, efficitur nec orci.</p>
-<p>Integer ac metus malesuada, fringilla tortor in, vulputate lectus. Maecenas lobortis aliquet erat. Sed ante sapien, fermentum quis ornare a, lacinia sit amet enim. Vestibulum tempor enim et pharetra dapibus. Fusce egestas sapien nec dolor lobortis semper. Nullam purus nisl, ornare eu rhoncus quis, auctor in mi. Sed vel eros ut lorem condimentum rutrum ac non mauris. Maecenas ultrices, sapien nec tempor tempor, tellus tortor dictum diam, nec scelerisque risus augue dapibus diam. Nunc mattis turpis eget nulla eleifend vulputate. Proin eget tempor felis. Curabitur viverra, nulla ac suscipit porta, nulla diam hendrerit magna, sed varius dolor lacus nec augue. Vivamus facilisis quis massa non sagittis.</p>
-<p>Curabitur porttitor ornare pretium. Nulla elementum eros urna, ac dictum lacus blandit vitae. Morbi in tincidunt diam. Nam id lorem rutrum tortor interdum consectetur. In vehicula ultricies urna, quis ultricies orci porta sed. Duis mattis, lacus sed rhoncus dignissim, nunc lectus venenatis eros, at lacinia massa arcu non risus. Aenean blandit mollis orci, sagittis consequat tortor consequat vel. Morbi pulvinar fermentum libero, eget hendrerit purus vulputate ut. Phasellus mauris elit, dapibus in pellentesque eu, mattis ut libero. Pellentesque mattis sodales dolor, non efficitur lorem volutpat vel. Donec non venenatis odio. Etiam in nisi urna.</p>
-</div>
-</article>
-<article id="post-5" class="col-md-6 col-sm-12 post-5 post type-post status-publish format-standard has-post-thumbnail hentry category-adventures category-lifestyle category-travel tag-decor tag-design tag-dive tag-furniture tag-health tag-learn tag-lifestyle tag-materials tag-natural tag-run tag-supplies">
-<header class="entry-header">
-<div class="entry-thumbnail"><a href="https://colorlib.com/blaskan/2017/04/20/spend-time-friends/" rel="bookmark"><img width="350" height="250" src="https://colorlib.com/blaskan/wp-content/uploads/sites/16/2017/04/01_Article7-350x250.jpg" class="attachment-small-blog-post-landscape size-small-blog-post-landscape wp-post-image" alt="" loading="lazy" /></a></div>
-<div class="entry-meta">
-<span class="byline">by <span class="author vcard"><a class="url fn n" href="https://colorlib.com/blaskan/author/demoblaskan/">Jane Smith</a></span></span><span class="posted-on"><span class="posted-on-delimeter"> - </span><a href="https://colorlib.com/blaskan/2017/04/20/spend-time-friends/" rel="bookmark"><time class="entry-date published" datetime="2017-04-20T08:06:35+00:00">April 20, 2017</time><time class="updated" datetime="2017-05-08T11:29:51+00:00">May 8, 2017</time></a></span> </div>
-<h2 class="entry-title"><a href="https://colorlib.com/blaskan/2017/04/20/spend-time-friends/" rel="bookmark">Spend time with friends</a></h2>
-</header>
-<div class="entry-content">
-<p>Aliquam erat volutpat. Aenean nec pellentesque purus. Quisque ornare, neque blandit congue tincidunt, neque lectus mattis diam, at suscipit turpis nulla in ex. Praesent porta gravida massa vel pharetra. Fusce tempus blandit ex a sodales. Nam mi enim, feugiat vitae aliquam et, viverra at tellus. Pellentesque lacinia maximus commodo. Vivamus ullamcorper arcu vitae cursus sodales. Mauris pulvinar finibus arcu ac mattis. Etiam interdum sodales magna volutpat tincidunt.</p>
-<p>Nam pretium accumsan cursus. Phasellus et urna pretium purus volutpat vestibulum sed ut metus. Proin augue ex, fermentum at sem vel, laoreet dignissim erat. Maecenas interdum neque nec accumsan eleifend. Fusce ultrices malesuada orci, ac tempor magna fringilla vitae. Cras sodales, leo at aliquam mattis, ex velit blandit purus, tincidunt posuere sem tellus vel mi. Etiam fringilla varius velit id pulvinar. Duis iaculis nec sapien fermentum mollis. Suspendisse potenti.</p>
-<p>Sed lorem augue, semper nec massa ac, egestas tincidunt libero. Cras luctus fermentum porta. Aenean eu porta magna, porttitor varius velit. Vestibulum magna erat, gravida at aliquet non, ultricies at mauris. Ut non mauris blandit, faucibus nisl id, lacinia nunc. Fusce eu ipsum dapibus, pretium sem et, rhoncus nunc. Sed turpis neque, malesuada quis euismod vitae, efficitur nec orci.</p>
-<p>Integer ac metus malesuada, fringilla tortor in, vulputate lectus. Maecenas lobortis aliquet erat. Sed ante sapien, fermentum quis ornare a, lacinia sit amet enim. Vestibulum tempor enim et pharetra dapibus. Fusce egestas sapien nec dolor lobortis semper. Nullam purus nisl, ornare eu rhoncus quis, auctor in mi. Sed vel eros ut lorem condimentum rutrum ac non mauris. Maecenas ultrices, sapien nec tempor tempor, tellus tortor dictum diam, nec scelerisque risus augue dapibus diam. Nunc mattis turpis eget nulla eleifend vulputate. Proin eget tempor felis. Curabitur viverra, nulla ac suscipit porta, nulla diam hendrerit magna, sed varius dolor lacus nec augue. Vivamus facilisis quis massa non sagittis.</p>
-</div>
-</article>
-</div>
-<nav class="navigation posts-navigation" role="navigation" aria-label="Posts">
-<h2 class="screen-reader-text">Posts navigation</h2>
-<div class="nav-links"><div class="nav-previous"><a href="https://colorlib.com/blaskan/page/2/">Older posts</a></div></div>
-</nav>
-</main>
-<aside id="secondary" class="widget-area col-md-4 col-sm-12" role="complementary">
-<section id="search-2" class="widget widget_search">
-<form role="search" method="get" class="search-form" action="https://colorlib.com/blaskan/">
-<label for="search-form-5f8fde5b77873">
-<span class="screen-reader-text">Search for:</span>
-</label>
-<input type="search" id="search-form-5f8fde5b77873" class="search-field" placeholder="Search&hellip;" value="" name="s" />
-<button type="submit" class="search-submit">
-<i class="fa fa-search" aria-hidden="true"></i>
-<span class="screen-reader-text">Search</span>
-</button>
-</form>
-</section><section id="blaskan_author_widget-4" class="widget widget_blaskan_author_widget"><h5 class="widget-title">About Author</h5><div class="user-info"><img alt='' src='https://secure.gravatar.com/avatar/ebc4018990624b2378fb1c3f191a4560?s=75&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/ebc4018990624b2378fb1c3f191a4560?s=150&#038;d=mm&#038;r=g 2x' class='avatar avatar-75 photo' height='75' width='75' loading='lazy' /><a href="https://colorlib.com/blaskan/author/demoblaskan/" title="Jane Smith" class="author-name" rel="author">Jane Smith</a><p class="author-description">Aenean vehicula orci ac urna molestie, nec pulvinar est lacinia. Vestibulum venenatis porim. ex. Pellentesque mi ipsum, vehicula in scelerisque quis, elementum eget dui. Nulla varius laoreet ipsum eu dignissim.</p><div class="author-social-menu"><ul id="social-menu" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33"><a href="https://www.facebook.com/colorlib"><span>Facebook</span></a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32"><a href="https://twitter.com/colorlib"><span>Twitter</span></a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34"><a href="https://plus.google.com/+Colorlib"><span>GooglePlus</span></a></li>
-</ul></div></section>
-<section id="recent-posts-2" class="widget widget_recent_entries">
-<h5 class="widget-title">Recent Posts</h5>
-<ul>
-<li>
-<a href="https://colorlib.com/blaskan/2017/04/20/explore-new-places-every-single-day/">Explore new places every single day</a>
-<span class="post-date">April 20, 2017</span>
-</li>
-<li>
-<a href="https://colorlib.com/blaskan/2017/04/20/travel-where-you-want/">Travel where you want.</a>
-<span class="post-date">April 20, 2017</span>
-</li>
-<li>
-<a href="https://colorlib.com/blaskan/2017/04/20/explore-the-world/">Explore the world</a>
-<span class="post-date">April 20, 2017</span>
-</li>
-<li>
-<a href="https://colorlib.com/blaskan/2017/04/20/go-to-the-movies/">Go to the movies</a>
-<span class="post-date">April 20, 2017</span>
-</li>
-<li>
-<a href="https://colorlib.com/blaskan/2017/04/20/learn-always-new-things/">Learn always new things</a>
-<span class="post-date">April 20, 2017</span>
-</li>
-</ul>
-</section><section id="categories-2" class="widget widget_categories"><h5 class="widget-title">Categories</h5>
-<ul>
-<li class="cat-item cat-item-4"><a href="https://colorlib.com/blaskan/category/adventures/">Adventures</a> (5)
-</li>
-<li class="cat-item cat-item-7"><a href="https://colorlib.com/blaskan/category/books/">Books</a> (1)
-</li>
-<li class="cat-item cat-item-6"><a href="https://colorlib.com/blaskan/category/cinema/">Cinema</a> (1)
-</li>
-<li class="cat-item cat-item-5"><a href="https://colorlib.com/blaskan/category/citybreakes/">Citybreakes</a> (4)
-</li>
-<li class="cat-item cat-item-8"><a href="https://colorlib.com/blaskan/category/landscapes/">Landscapes</a> (3)
-</li>
-<li class="cat-item cat-item-2"><a href="https://colorlib.com/blaskan/category/lifestyle/">Lifestyle</a> (6)
-</li>
-<li class="cat-item cat-item-3"><a href="https://colorlib.com/blaskan/category/travel/">Travel</a> (5)
-</li>
-<li class="cat-item cat-item-1"><a href="https://colorlib.com/blaskan/category/uncategorized/">Uncategorized</a> (6)
-</li>
-</ul>
-</section><section id="tag_cloud-2" class="widget widget_tag_cloud"><h5 class="widget-title">Tags</h5><div class="tagcloud"><a href="https://colorlib.com/blaskan/tag/decor/" class="tag-cloud-link tag-link-16 tag-link-position-1" style="font-size: 8pt;" aria-label="Decor (7 items)">Decor</a>
-<a href="https://colorlib.com/blaskan/tag/design/" class="tag-cloud-link tag-link-17 tag-link-position-2" style="font-size: 8pt;" aria-label="Design (7 items)">Design</a>
-<a href="https://colorlib.com/blaskan/tag/dive/" class="tag-cloud-link tag-link-23 tag-link-position-3" style="font-size: 8pt;" aria-label="Dive (7 items)">Dive</a>
-<a href="https://colorlib.com/blaskan/tag/furniture/" class="tag-cloud-link tag-link-15 tag-link-position-4" style="font-size: 8pt;" aria-label="Furniture (7 items)">Furniture</a>
-<a href="https://colorlib.com/blaskan/tag/health/" class="tag-cloud-link tag-link-18 tag-link-position-5" style="font-size: 8pt;" aria-label="Health (7 items)">Health</a>
-<a href="https://colorlib.com/blaskan/tag/learn/" class="tag-cloud-link tag-link-22 tag-link-position-6" style="font-size: 8pt;" aria-label="Learn (7 items)">Learn</a>
-<a href="https://colorlib.com/blaskan/tag/lifestyle/" class="tag-cloud-link tag-link-13 tag-link-position-7" style="font-size: 8pt;" aria-label="Lifestyle (7 items)">Lifestyle</a>
-<a href="https://colorlib.com/blaskan/tag/materials/" class="tag-cloud-link tag-link-20 tag-link-position-8" style="font-size: 8pt;" aria-label="Materials (7 items)">Materials</a>
-<a href="https://colorlib.com/blaskan/tag/natural/" class="tag-cloud-link tag-link-14 tag-link-position-9" style="font-size: 8pt;" aria-label="Natural (7 items)">Natural</a>
-<a href="https://colorlib.com/blaskan/tag/run/" class="tag-cloud-link tag-link-21 tag-link-position-10" style="font-size: 8pt;" aria-label="Run (7 items)">Run</a>
-<a href="https://colorlib.com/blaskan/tag/supplies/" class="tag-cloud-link tag-link-19 tag-link-position-11" style="font-size: 8pt;" aria-label="Supplies (7 items)">Supplies</a></div>
-</section></aside>
-</div>
-</div>
-<footer id="colophon" class="site-footer" role="contentinfo">
-<div class="footer-widgets widget-area container">
-<div class="row">
-<div class="col-md-3 col-sm-6 col-xs-12"><section id="text-2" class="widget widget_text"> <div class="textwidget"><img src="https://colorlib.com/blaskan/wp-content/uploads/sites/16/2017/05/blaskan-white-logo.png">
-<p>Quisque velit urna, blandit eu rhoncus ut, efficitur sit amet justo. Suspendisse lobortis erat nec massa egestas venenatis nec eu ligula. Vestibulum condimentum cursus magna, a finibus sapien sollicitudin a.</p>
-<p>Proin a rutrum neque. Proin accumsan ipsum quis tellus venenatis dapibus. Phasellus sit amet mi mauris. Nullam vulputate est ut neque. sagittis.elementum lectus imperdiet. Aliquam lacinia felis sed ante volutpat, accumsan ullamcorper</p></div>
-</section></div><div class="col-md-3 col-sm-6 col-xs-12">
-<section id="recent-posts-3" class="widget widget_recent_entries">
-<h5 class="widget-title">Recent Posts</h5>
-<ul>
-<li>
-<a href="https://colorlib.com/blaskan/2017/04/20/explore-new-places-every-single-day/">Explore new places every single day</a>
-<span class="post-date">April 20, 2017</span>
-</li>
-<li>
-<a href="https://colorlib.com/blaskan/2017/04/20/travel-where-you-want/">Travel where you want.</a>
-<span class="post-date">April 20, 2017</span>
-</li>
-<li>
-<a href="https://colorlib.com/blaskan/2017/04/20/explore-the-world/">Explore the world</a>
-<span class="post-date">April 20, 2017</span>
-</li>
-<li>
-<a href="https://colorlib.com/blaskan/2017/04/20/go-to-the-movies/">Go to the movies</a>
-<span class="post-date">April 20, 2017</span>
-</li>
-<li>
-<a href="https://colorlib.com/blaskan/2017/04/20/learn-always-new-things/">Learn always new things</a>
-<span class="post-date">April 20, 2017</span>
-</li>
-</ul>
-</section></div><div class="col-md-3 col-sm-6 col-xs-12"><section id="categories-3" class="widget widget_categories"><h5 class="widget-title">Categories</h5>
-<ul>
-<li class="cat-item cat-item-4"><a href="https://colorlib.com/blaskan/category/adventures/">Adventures</a> (5)
-</li>
-<li class="cat-item cat-item-7"><a href="https://colorlib.com/blaskan/category/books/">Books</a> (1)
-</li>
-<li class="cat-item cat-item-6"><a href="https://colorlib.com/blaskan/category/cinema/">Cinema</a> (1)
-</li>
-<li class="cat-item cat-item-5"><a href="https://colorlib.com/blaskan/category/citybreakes/">Citybreakes</a> (4)
-</li>
-<li class="cat-item cat-item-8"><a href="https://colorlib.com/blaskan/category/landscapes/">Landscapes</a> (3)
-</li>
-<li class="cat-item cat-item-2"><a href="https://colorlib.com/blaskan/category/lifestyle/">Lifestyle</a> (6)
-</li>
-<li class="cat-item cat-item-3"><a href="https://colorlib.com/blaskan/category/travel/">Travel</a> (5)
-</li>
-<li class="cat-item cat-item-1"><a href="https://colorlib.com/blaskan/category/uncategorized/">Uncategorized</a> (6)
-</li>
-</ul>
-</section></div><div class="col-md-3 col-sm-6 col-xs-12"><section id="calendar-2" class="widget widget_calendar"><div id="calendar_wrap" class="calendar_wrap"><table id="wp-calendar" class="wp-calendar-table">
-<caption>October 2020</caption>
-<thead>
-<tr>
-<th scope="col" title="Monday">M</th>
-<th scope="col" title="Tuesday">T</th>
-<th scope="col" title="Wednesday">W</th>
-<th scope="col" title="Thursday">T</th>
-<th scope="col" title="Friday">F</th>
-<th scope="col" title="Saturday">S</th>
-<th scope="col" title="Sunday">S</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td colspan="3" class="pad">&nbsp;</td><td>1</td><td>2</td><td>3</td><td>4</td>
-</tr>
-<tr>
-<td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td>
-</tr>
-<tr>
-<td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td>
-</tr>
-<tr>
-<td>19</td><td>20</td><td id="today">21</td><td>22</td><td>23</td><td>24</td><td>25</td>
-</tr>
-<tr>
-<td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td>
-<td class="pad" colspan="1">&nbsp;</td>
-</tr>
-</tbody>
-</table><nav aria-label="Previous and next months" class="wp-calendar-nav">
-<span class="wp-calendar-nav-prev"><a href="https://colorlib.com/blaskan/2017/04/">&laquo; Apr</a></span>
-<span class="pad">&nbsp;</span>
-<span class="wp-calendar-nav-next">&nbsp;</span>
-</nav></div></section></div> </div>
-</div>
-<div class="site-info">
-<div class="container">
-<div class="row">
-<div class="copyright-info col-md-6 col-sm-12">
-<a href="https://wordpress.org/">Proudly powered by WordPress</a>
-<span class="sep"> | </span>
-Theme: Blaskan by <a href="https://colorlib.com/" target="_blank" rel="designer">Colorlib.com</a>. </div>
-<div class="main-footer-navigation col-md-6 col-sm-12">
-<div class="menu-footer-container"><ul id="footer-menu" class="menu"><li id="menu-item-35" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35"><a href="#">Sitemap</a></li>
-<li id="menu-item-36" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36"><a href="#">Privacy Policy</a></li>
-<li id="menu-item-37" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37"><a href="#">Terms of use</a></li>
-</ul></div> </div>
-</div>
-</div>
-</div>
-</footer>
-</div>
-<script type='text/javascript' id='contact-form-7-js-extra'>
-/* <![CDATA[ */
-var wpcf7 = {"apiSettings":{"root":"https:\/\/colorlib.com\/blaskan\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='https://colorlib.com/blaskan/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.2.2' id='contact-form-7-js'></script>
-<script type='text/javascript' src='https://colorlib.com/blaskan/wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js'></script>
-<script type='text/javascript' src='https://colorlib.com/blaskan/wp-includes/js/masonry.min.js?ver=4.2.2' id='masonry-js'></script>
-<script type='text/javascript' src='https://colorlib.com/blaskan/wp-content/themes/blaskan/assets/js/navigation.js?ver=20151215' id='blaskan-navigation-js'></script>
-<script type='text/javascript' src='https://colorlib.com/blaskan/wp-content/themes/blaskan/assets/js/skip-link-focus-fix.js?ver=20151215' id='blaskan-skip-link-focus-fix-js'></script>
-<script type='text/javascript' src='https://colorlib.com/blaskan/wp-content/themes/blaskan/assets/js/scripts.js?ver=20151215' id='blaskan-scripts-js'></script>
-<script type='text/javascript' src='https://colorlib.com/blaskan/wp-includes/js/wp-embed.min.js?ver=5.5.1' id='wp-embed-js'></script>
+  <title>前段程式設計:作業三</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/lib
+  s/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <h1>傅予潔 Cindy Fu</h1>
+        <p>國立台灣大學 職能治療學系</p> 
+      </div>
+      <nav class="navbar navbar-expand-sm bg-warning navbar-dark">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="navbar-brand" href="#">個人資料</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">興趣</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">活動經驗</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">比賽結果</a>
+          </li>
+        </ul>
+      </nav>
+   
+        <div class="container" style="margin-top:30px">
+          <div class="row">
+            <div class="col-sm-4">
+              <h2>About Me</h2>
+              <h5>Photo of me:</h5>
+              <div class="fakeimg">Fake Image</div>
+              <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+              <h3>Some Links</h3>
+              <p>Lorem ipsum dolor sit ame.</p>
+              <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+              </ul>
+              <hr class="d-sm-none">
+            </div>
+            <div class="col-sm-8">
+              <h2>TITLE HEADING</h2>
+              <h5>Title description, Dec 7, 2017</h5>
+              <div class="fakeimg">Fake Image</div>
+              <p>Some text..</p>
+              <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+              <br>
+              <h2>TITLE HEADING</h2>
+              <h5>Title description, Sep 2, 2017</h5>
+              <div class="fakeimg">Fake Image</div>
+              <p>Some text..</p>
+              <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="jumbotron text-center" style="margin-bottom:0">
+          <p>Footer</p>
+        </div>
+        
+        </body>
+        </html>
+        
 </body>
-</html>
