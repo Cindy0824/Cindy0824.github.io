@@ -3,3 +3,19 @@
     font-weight: bold;
     font-family: Arial, Helvetica, "Microsoft JhengHei", sans-serif;
 }
+
+.name {
+    position: relative;
+    left: 8%;
+}
+
+.name2 {
+    position: relative;
+    left: 14%;
+}
+
+.icon {
+    width: 50%;
+    position: center;
+
+}
