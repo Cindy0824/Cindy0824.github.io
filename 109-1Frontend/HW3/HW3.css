@@ -20,14 +20,11 @@
 
 }
 
-.position {
-    background-position: right;
-}
 
 .slider_container div {
     position: absolute;
     top: 0%;
-    right: 0%;
+    right: -10%;
     opacity: 0;
     filter: alpha(opacity=0);
 }
@@ -58,13 +55,13 @@
 }
 
 @keyframes round {
-    2% {
+    5% {
         opacity: 1;
         filter: alpha(opacity=100);
 
     }
 
-    48% {
+    45% {
         opacity: 1;
         filter: alpha(opacity=100);
 
