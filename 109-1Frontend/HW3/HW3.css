@@ -8,16 +8,14 @@
     position: relative;
     width: 100%;
     padding: 0 8%;
-    /* fixed */
-    /*left: 8%;*/
+
 }
 
 .name2 {
     position: relative;
     width: 100%;
     padding: 0 8%;
-    /* fixed */
-    /*left: 14%;*/
+
 }
 
 .icon {
@@ -26,10 +24,7 @@
 
 }
 
-.image2 {
-    width: 5%;
 
-}
 
 
 .slider_container div {
