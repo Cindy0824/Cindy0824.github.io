@@ -6,12 +6,18 @@
 
 .name {
     position: relative;
-    left: 8%;
+    width: 100%;
+    padding: 0 8%;
+    /* fixed */
+    /*left: 8%;*/
 }
 
 .name2 {
     position: relative;
-    left: 14%;
+    width: 100%;
+    padding: 0 8%;
+    /* fixed */
+    /*left: 14%;*/
 }
 
 .icon {
@@ -20,11 +26,16 @@
 
 }
 
+.image2 {
+    width: 5%;
+
+}
+
 
 .slider_container div {
     position: absolute;
     top: 0%;
-    right: -10%;
+    right: 0%;
     opacity: 0;
     filter: alpha(opacity=0);
 }
@@ -82,4 +93,18 @@
 .slider_container div:nth-child(2) {
     -webkit-animation-delay: 5s;
     animation-delay: 5s;
+}
+
+
+
+.slider_container {
+    padding-bottom: 40%;
+}
+
+.slider_container div {
+    width: 100%;
+}
+
+.slider_container div img {
+    width: 100%;
 }
