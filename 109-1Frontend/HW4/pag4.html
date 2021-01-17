@@ -29,7 +29,7 @@
                   <a class="nav-link" href="#重訓器材">重訓器材</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#菜單參考">居家訓練居家訓練</a>
+                  <a class="nav-link" href="#菜單參考">居家訓練</a>
                 
               </ul>
             </div>
@@ -51,7 +51,9 @@
             </thead>
             <tbody style="background-color: ivory;">
               <tr>
-                <td></td> 
+                <td>
+                  <br><br><br><br><br><br><br><br><br><br>
+                </td> 
                 <td></td>
                 <td></td>
                 <td></td>
@@ -64,24 +66,26 @@
   </div>    
   
  
-<div class="container" style="margin-top: 20px;">
+<div class="container" style="margin-top: 20px; margin-bottom: 30px;">
   <div class="輸入" >
-    <h3>加入訓練內容</h3>
+    <h3 style="text-align: center;font-weight: bolder;margin-top: 20px;">加入訓練內容</h3>
     <form id="菜單">
-        <input class="項目" type="text" placeholder="項目" />
     <div class="row">
-      <div class="col-sm-3">
+      <div class="col-sm-6">
+        <input id="todo" class="項目" type="text" placeholder="項目" />
+      </div>
+      <div class="col-sm-2">
         <textarea class="內容" placeholder="次數"></textarea>
       </div>
-      <div class="col-sm-3">
+      <div class="col-sm-2">
         <textarea class="內容" placeholder="輪數"></textarea>
       </div>
-      <div class="col-sm-3">
+      <div class="col-sm-2">
         <input class="內容" type="text" id="datepicker" placeholder="星期( )" />
       </div>
-      <div class="col-sm-3">
+      
         <input class="Add" type="button" class="btn btn-primary" value="Add Plan" onclick="Plan.add();" />
-      </div>
+  
    </form>
   </div>
     <input class="Clear" type="button" class="btn btn-primary" value="Clear Plan" onclick="Plan.clear();" />
