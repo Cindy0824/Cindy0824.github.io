@@ -22,28 +22,34 @@
 
 }
 
-.項目 {
-    position: relative;
-    width: 100%;
-    left: 5%;
-    right: 5%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.task-list input,
+.task-list textarea {
+    width: 240px;
+    margin: 1px 5px;
 }
 
-.內容 {
-    position: relative;
-    width: 60%;
-    left: 5%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.task-list input {
+    height: 30px;
 }
 
-.Add {
-    position: relative;
-    width: 40%;
-    left: 40%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: red;
+.todo-task {
+    border-radius: 5px;
+    background-color: #fff;
+    width: 130px;
+    margin: 2px;
+    padding: 5px;
+}
+
+.task-list input[type="button"] {
+    width: 100px;
+    margin: 5px;
+}
+
+.todo-task>.task-header {
+    font-weight: bold;
+}
+
+.todo-task>.task-round {
+    font-size: small;
+    font-style: italic;
 }

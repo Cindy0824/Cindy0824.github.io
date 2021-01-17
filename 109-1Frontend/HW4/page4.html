@@ -10,6 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/lib
     s/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./HW4.js"></script>
   </head>
 
 
@@ -52,44 +53,90 @@
             <tbody style="background-color: ivory;">
               <tr>
                 <td>
-                  <br><br><br><br><br><br><br><br><br><br>
+                  <div class="task-list" id="Mon">
+                  <div class="todo-task">
+                    <div class="task-header">項目</div>
+                    <div class="task-time">次數或時間</div>
+                    <p>x</p><div class="task-round">輪數</div>
+                  </div>
+                </div>
                 </td> 
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td> 
+                  <div class="task-list" id="Tue">
+                  <div class="todo-task">
+                    <div class="task-header">Sample Header</div>
+                    <div class="task-round">25/06/1992</div>
+                  </div>
+                </div>
+              </td>
+                <td>
+                  <div class="task-list" id="Wen">
+                    <div class="todo-task">
+                      <div class="task-header">Sample Header</div>
+                      <div class="task-round">25/06/1992</div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="task-list" id="Thu">
+                  <div class="todo-task">
+                    <div class="task-header">Sample Header</div>
+                    <div class="task-round">25/06/1992</div>
+                  </div>
+                </div>
+              </td>
+                <td>
+                  <div class="task-list" id="Fri">
+                    <div class="todo-task">
+                      <div class="task-header">Sample Header</div>
+                      <div class="task-round">25/06/1992</div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="task-list" id="Sat">
+                    <div class="todo-task">
+                      <div class="task-header">Sample Header</div>
+                      <div class="task-round">25/06/1992</div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="task-list" id="Sun">
+                    <div class="todo-task">
+                      <div class="task-header">Sample Header</div>
+                      <div class="task-round">25/06/1992</div>
+                    </div>
+                  </div>
+                </td>
               </tr> 
             </tbody>
           </table>
   </div>    
-  
- 
-<div class="container" style="margin-top: 20px;margin-bottom: 30px;">
-  <div class="輸入" >
+
+<div class="container 輸入" style="margin-top: 20px;margin-bottom: 30px;">
+  <div class="task-list" >
     <h3 style="text-align: center;font-weight: bolder;margin-top: 20px;">加入訓練內容</h3>
-    <form id="菜單">
+    <form id="todo-form">
     <div class="row">
       <div class="col-sm-6">
-        <input id="todo" class="項目" type="text" placeholder="項目" />
+        <input  type="text" placeholder="項目" />
       </div>
       <div class="col-sm-2">
-        <textarea class="內容" placeholder="次數"></textarea>
+        <textarea placeholder="次數 0r 時間"></textarea>
       </div>
       <div class="col-sm-2">
-        <textarea class="內容" placeholder="輪數"></textarea>
+        <textarea placeholder="輪數"></textarea>
       </div>
       <div class="col-sm-2">
-        <input class="內容" type="text" id="datepicker" placeholder="星期( )" />
+        <input type="text" placeholder="星期()" />
       </div>
       
-        <input class="Add" type="button" class="btn btn-primary" value="Add Plan" onclick="Plan.add();" />
-  
+      <input type="button" class="btn btn-primary" value="Add Task" />
    </form>
-  </div>
-    <input class="Clear" type="button" class="btn btn-primary" value="Clear Plan" onclick="Plan.clear();" />
-
+    </div>
+  <input type="button" class="btn btn-primary" value="Clear Data" />
+  
 </div>
 </div>
 
