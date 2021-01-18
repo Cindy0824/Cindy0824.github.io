@@ -1,0 +1,55 @@
+.word {
+    font-family: Arial, Helvetica, "Microsoft JhengHei", sans-serif;
+
+}
+
+.buttom {
+    width: 450px;
+    height: 200px;
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.輸入 {
+    position: relative;
+    width: 100%;
+    float: left;
+    margin: 0 5px;
+    background-color: rgb(177, 177, 177);
+    min-height: 240px;
+    border-radius: 10px;
+    padding-bottom: 15px;
+
+}
+
+.task-list input,
+.task-list textarea {
+    width: 240px;
+    margin: 1px 5px;
+}
+
+.task-list input {
+    height: 30px;
+}
+
+.todo-task {
+    border-radius: 5px;
+    background-color: #fff;
+    width: 130px;
+    margin: 2px;
+    padding: 5px;
+}
+
+.task-list input[type="button"] {
+    width: 100px;
+    margin: 5px;
+}
+
+.todo-task>.task-header {
+    font-weight: bold;
+}
+
+.todo-task>.task-round {
+    font-size: small;
+    font-style: italic;
+}

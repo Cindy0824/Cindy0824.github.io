@@ -7,10 +7,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./HW4.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/lib
-    s/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="./HW4.js"></script>
   </head>
 
 
@@ -31,7 +29,6 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="page3.html">居家訓練</a>
-                
               </ul>
             </div>
           </nav>
@@ -50,96 +47,83 @@
                 <th>Sun</th>
               </tr>
             </thead>
-            <tbody style="background-color: ivory;">
-              <tr>
-                <td>
-                  <div class="task-list" id="Mon">
-                  <div class="todo-task">
-                    <div class="task-header">項目</div>
-                    <div class="task-time">次數或時間</div>
-                    <p>x</p><div class="task-round">輪數</div>
-                  </div>
-                </div>
-                </td> 
-                <td> 
-                  <div class="task-list" id="Tue">
-                  <div class="todo-task">
-                    <div class="task-header">Sample Header</div>
-                    <div class="task-round">25/06/1992</div>
-                  </div>
-                </div>
-              </td>
-                <td>
-                  <div class="task-list" id="Wen">
-                    <div class="todo-task">
-                      <div class="task-header">Sample Header</div>
-                      <div class="task-round">25/06/1992</div>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="task-list" id="Thu">
-                  <div class="todo-task">
-                    <div class="task-header">Sample Header</div>
-                    <div class="task-round">25/06/1992</div>
-                  </div>
-                </div>
-              </td>
-                <td>
-                  <div class="task-list" id="Fri">
-                    <div class="todo-task">
-                      <div class="task-header">Sample Header</div>
-                      <div class="task-round">25/06/1992</div>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="task-list" id="Sat">
-                    <div class="todo-task">
-                      <div class="task-header">Sample Header</div>
-                      <div class="task-round">25/06/1992</div>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="task-list" id="Sun">
-                    <div class="todo-task">
-                      <div class="task-header">Sample Header</div>
-                      <div class="task-round">25/06/1992</div>
-                    </div>
-                  </div>
-                </td>
+            <tbody style="background-color: ivory;" >
+              <tr style="height:100px;">
+                <td><div id="Mon" class="clearAll"></div></td> 
+                <td><div id="Tue" class="clearAll"></div></td>
+                <td><div id="Wen" class="clearAll"></div></td>
+                <td><div id="Thu" class="clearAll"></div></td>
+                <td><div id="Fri" class="clearAll"></div></td>
+                <td><div id="Sat" class="clearAll"></div></td>
+                <td><div id="Sun" class="clearAll"></div></td>
               </tr> 
             </tbody>
           </table>
   </div>    
-
-<div class="container 輸入" style="margin-top: 20px;margin-bottom: 30px;">
-  <div class="task-list" >
+  
+ 
+<div class="container" style="margin-top: 20px;margin-bottom: 30px;">
+  <div class="輸入" >
     <h3 style="text-align: center;font-weight: bolder;margin-top: 20px;">加入訓練內容</h3>
-    <form id="todo-form">
-    <div class="row">
-      <div class="col-sm-6">
-        <input  type="text" placeholder="項目" />
-      </div>
-      <div class="col-sm-2">
-        <textarea placeholder="次數 0r 時間"></textarea>
-      </div>
-      <div class="col-sm-2">
-        <textarea placeholder="輪數"></textarea>
-      </div>
-      <div class="col-sm-2">
-        <input type="text" placeholder="星期()" />
-      </div>
+    <form id="菜單" class="p-3">
+
+      <div class="row">
+
+        <div class="col-sm-6 col-md-5 mb-4">
+          <input id="todo" class="form-control" type="text"   placeholder="項目" />
+        </div>
       
-      <input type="button" class="btn btn-primary" value="Add Task" />
+
+        <div class="col-sm-6 col-md-2 mb-4">
+          <input id="time1" class="form-control" min="1" value="下" type="number" placeholder="次數" />
+        </div>
+      
+
+        <div class="col-sm-6 col-md-2 mb-4">
+          <input id="time2" class="form-control" min="1" value="輪數" type="number" placeholder="輪數" />
+        </div>
+
+        <div class="col-sm-6 col-md-2 mb-4">
+          <select id="week" class="form-control">
+            <option value="Mon">Mon</option>
+            <option value="Tue">Tue</option>
+            <option value="Wen">Wen</option>
+            <option value="Thu">Thu</option>
+            <option value="Fri">Fri</option>
+            <option value="Sat">Sat</option>
+            <option value="Sun">Sun</option>
+          </select>
+        </div>
+
+        <div class="col-sm-6 col-md-8 mb-4">
+          <input id="button" class="btn btn-danger w-100" type="button" value="Add Plan" onclick="add();" />
+        </div>
+
+        <div class="col-sm-6 col-md-4 mb-4">
+          <input class="btn btn-light w-100" type="button" value="Clear Plan" onclick="clearAll();" />
+        </div>
+
+      </div><!-- /.row -->
+
    </form>
-    </div>
-  <input type="button" class="btn btn-primary" value="Clear Data" />
   
 </div>
-</div>
 
+<script>
+  function add(){
+    var week = $("#week").val();
+    var todo = $("#todo").val();
+    var time1 = $("#time1").val();
+    var time2 = $("#time2").val();
+    var br = ("<br/>")
+    $('#'+week).append(todo + ' ' +time1+'x'+ ' ' +time2+'輪' + br)
+  };
+
+  function clearAll(){
+    $(".clearAll").empty();
+  };
+
+</script>
 
 </body>   
 </html>
