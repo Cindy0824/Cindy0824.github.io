@@ -25,7 +25,7 @@
 
 這次作業我從w3school學了一些技巧，像是照片輪播、Progress Bar、Cards、Navbar、...等，也達到RWD的效果，再加上之前學到的html和css語法，完成本次作業。
 
-[HW3 作業網址](https://cindy0824.github.io/index.html)
+[HW3 作業網址](https://cindy0824.github.io/109-1Frontend/HW3/index.html)
 
 # 期末專題
 這學期期末專題的題目由同學自訂，希望同學可以結合前半學期的 html、css，以及下半學期的 JavaScript、jQuery，甚至更多技術，做出一個美觀又實用的互動式網頁。
