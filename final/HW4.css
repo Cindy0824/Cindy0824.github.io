@@ -1,0 +1,51 @@
+.word {
+    font-family: Arial, Helvetica, "Microsoft JhengHei", sans-serif;
+
+}
+
+.buttom {
+    width: 450px;
+    height: 200px;
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+
+
+.輸入 {
+    position: relative;
+    width: 100%;
+    float: left;
+    margin: 0 5px;
+    background-color: rgb(177, 177, 177);
+    min-height: 240px;
+    border-radius: 10px;
+    padding-bottom: 15px;
+
+}
+
+.項目 {
+    position: relative;
+    width: 100%;
+    left: 5%;
+    right: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.內容 {
+    position: relative;
+    width: 60%;
+    left: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Add {
+    position: relative;
+    width: 40%;
+    left: 40%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: red;
+}
